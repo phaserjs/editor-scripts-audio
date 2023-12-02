@@ -7,8 +7,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "tsc --watch",
+    "prestart": "npm run clean",
     "clean": "rm -Rf out/* && rm -Rf types/*",
-    "build": "npm run clean && tsc",
+    "build": "tsc",
+    "prebuild": "npm run clean",
     "prepare": "npm run build",
     "publish-local": "npm run build && npm publish --access=public --registry http://localhost:4873/",
     "patch-alpha": "npm version prerelease --preid=alpha --no-git-tag-version",
