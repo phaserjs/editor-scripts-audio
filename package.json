@@ -9,7 +9,7 @@
     "start": "tsc --watch",
     "clean": "rm -Rf out/* && rm -Rf types/*",
     "build": "npm run clean && tsc",
-    "publish": "npm run build && npm publish --access=public",
+    "prepublish": "npm run build",
     "publish-local": "npm run build && npm publish --access=public --registry http://localhost:4873/",
     "patch-alpha": "npm version prerelease --preid=alpha --no-git-tag-version",
     "publish-alpha": "npm run build && npm publish --tag alpha --access=public",
