@@ -1,6 +1,6 @@
 {
   "name": "@phasereditor2d/scripts-audio",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Audio scripts for Phaser Editor 2D.",
   "main": "out/index.js",
   "types": "types/index.d.ts",
